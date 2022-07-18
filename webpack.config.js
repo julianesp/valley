@@ -37,12 +37,16 @@ module.exports = {
 					"css-loader",
 					"sass-loader",
 				],
+			},
+			{
+				test: /\.(png|svg|jpg|gif|ico|jpeg)$/,
+				type: 'asset'
 			}
 		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: './public/index.html',
+			template: './src/public/index.html',
 			filename: './index.html'
 		}),
 		new MiniCssExtractPlugin({
