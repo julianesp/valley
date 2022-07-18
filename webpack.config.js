@@ -16,6 +16,7 @@ module.exports = {
 			'@products': path.resolve(__dirname, 'src/assets/pictures/'),
 			'@images': path.resolve(__dirname, 'src/assets/img/'),
 			'@styles': path.resolve(__dirname, 'src/styles/'),
+			'@pages': path.resolve(__dirname, 'src/pages/')
 		}
 	},
 	module: {
@@ -60,8 +61,5 @@ module.exports = {
 	],
 	devServer: {
 		historyApiFallback: true,
-		// contentBase: path.join(__dirname, 'dist'),
-		compress: true,
-		port: 3005,
 	}
 }
