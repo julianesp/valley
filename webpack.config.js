@@ -12,6 +12,11 @@ module.exports = {
 	mode: 'development',
 	resolve: {
 		extensions: ['.js', '.jsx'],
+		alias: {
+			'@products': path.resolve(__dirname, 'src/assets/pictures/'),
+			'@images': path.resolve(__dirname, 'src/assets/img/'),
+			'@styles': path.resolve(__dirname, 'src/styles/'),
+		}
 	},
 	module: {
 		rules: [
@@ -55,5 +60,7 @@ module.exports = {
 	],
 	devServer: {
 		historyApiFallback: true,
+		//contentBase: path.join(__dirname, 'dist'),
+		port: 3005,
 	}
 }

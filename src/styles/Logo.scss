@@ -1,0 +1,22 @@
+.logo {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    box-shadow: 0 0 15px $color-sombra-blue;
+    top: 0;
+    background-color: #fff;
+    z-index: 50;
+    & img {
+        width: 36px;
+        // height: calc(100% - 20px);
+        margin: 0 10px;
+    }
+    & h4 {
+        margin-left: 10px;
+        letter-spacing: 2px;
+        font-size: 1.5em;
+        color: $color-text;
+    }
+}
